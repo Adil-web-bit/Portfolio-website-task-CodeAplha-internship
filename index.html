@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adil-Developer Portfolios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Adil's Portfolio - A professional portfolio showcasing web development, machine learning, and Python expertise.">
+    <meta name="keywords" content="Adil, Portfolio, Web Development, Machine Learning, Python, Full Stack Developer, Frontend Developer">
+    <meta name="author" content="Muhammad Adil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Adil's Portfolio">
+    <meta property="og:description" content="Explore Adil's professional portfolio featuring web development, machine learning, and Python projects.">
+    <meta property="og:image" content="bg.png">
+    <meta property="og:url" content="http://www.adilsportfolio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            line-height: 1.4;
+        }
+
+        p, li {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            font-size: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(16, 16, 95);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(165, 165, 240);
+            font-size: 1.01rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+        
+        main hr {
+            border: 0;
+            background:#9c97f1;
+            height: 1.2px;
+            margin: 30px 84px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin: 70px 0;
+        }
+        
+        leftSection .btn {
+           padding: 12px;
+           background-color: #1e2167; 
+           color:white;
+           border:2px solid white;
+           border-radius:6px;
+           font-size:20px;
+           cursor:pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+        
+        .text-gray {
+           color:gray;
+        }
+        
+        .secondSection .box {
+           background:white;
+           width: 80vw;
+           height: 2px;
+           margin: 56px 0;
+           display:flex;
+        }
+        
+        .secondSection .vertical {
+          height:93px;
+          width: 1px;
+          background-color: rgb(251, 251, 251);
+          margin:0px 100px;
+        }
+        
+        .image-top {
+            width: 23px;
+            position: relative;
+            Top: -32px;
+            left: -9px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            Top: 70px;
+            width: 150px;
+            font-size: 13PX;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            Top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        
+        footer {
+            background-color: purple;
+            background-color: #0d0d15;
+        }
+        
+        .footer {
+          display:flex; 
+          padding: 23px 122px; 
+          justify-content: space-evenly;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        .footer > div {
+            width: 223px;
+        }
+        
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding:12px 0;
+        }
+        
+        .leftSection .button {
+            padding:50px 0;
+        }
+        
+        .btn {
+           background-color: #1e2167; 
+           color:white;
+           border:2px solid white;
+           border-radius:6px;
+           font-size:20px;
+           cursor:pointer;
+           padding: 10px 20px;
+        }
+        
+        /* About Page Styles */
+        .about-section, .services-section, .projects-section {
+            max-width: 80vw;
+            margin: 70px auto;
+            padding: 20px;
+        }
+        
+        .about-section h1, .services-section h1, .projects-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: blueviolet;
+        }
+        
+        .about-section h2, .services-section h2, .projects-section h2 {
+            font-size: 1.8rem;
+            margin: 25px 0 15px;
+            color: rgb(165, 165, 240);
+        }
+        
+        .about-section p, .services-section p, .projects-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .skill-item {
+            background-color: rgb(16, 16, 95);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .active {
+            color: rgb(165, 165, 240) !important;
+            font-weight: 500;
+        }
+        
+        /* Services Page Specific Styles */
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: rgb(16, 16, 95);
+            border-radius: 10px;
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: rgb(170, 107, 228);
+        }
+        
+        .service-card .price {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: #9c97f1;
+        }
+        
+        .service-card ul {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+        
+        .service-card ul li {
+            margin-bottom: 8px;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: blueviolet;
+        }
+        
+        .services-intro {
+            margin-bottom: 40px;
+        }
+        
+        .testimonials {
+            margin-top: 60px;
+        }
+        
+        .testimonial-card {
+            background-color: rgb(16, 16, 95);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 15px;
+            color: rgb(170, 107, 228);
+        }
+        
+        /* Projects Page Styles */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background-color: rgb(16, 16, 95);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-image {
+            height: 200px;
+            background-color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.2rem;
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: rgb(170, 107, 228);
+        }
+        
+        .project-description {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .tech-tag {
+            background-color: rgb(30, 30, 70);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .project-link:hover {
+            background-color: rgb(123, 44, 197);
+        }
+        
+        .projects-intro {
+            margin-bottom: 40px;
+        }
+        
+        .project-categories {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .category-btn {
+            padding: 8px 20px;
+            background-color: rgb(16, 16, 95);
+            border: none;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .category-btn.active {
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        .category-btn:hover {
+            background-color: rgb(30, 30, 120);
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .firstSection > div {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer > div {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .secondSection {
+                height: auto;
+            }
+
+            .service-cards {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .project-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 33, 0.95);
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .mobile-menu ul li {
+            margin: 20px 0;
+        }
+
+        .mobile-menu ul li a {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1100;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer > div {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .firstSection > div {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .firstSection > div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .rightSection img {
+                width: 100%;
+                height: auto;
+            }
+
+            .secondSection {
+                padding: 20px;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vertical {
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .footer > div {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .secondSection .box {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .secondSection .vertical {
+                margin: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .secondSection .vertical-title,
+            .secondSection .vertical-desc {
+                position: static;
+                margin-top: 10px;
+            }
+
+            .secondSection .image-top {
+                position: static;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .secondSection {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondSection .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+            }
+
+            .secondSection .vertical {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+
+            .secondSection .vertical-title,
+            .secondSection .vertical-desc {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .secondSection .image-top {
+                margin-bottom: 10px;
+            }
+
+            footer {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .secondSection .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .secondSection .vertical {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+
+            .secondSection .vertical-title {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .secondSection .vertical-desc {
+                margin-top: 5px;
+                font-size: 1rem;
+                color: gray;
+            }
+
+            .secondSection .image-top {
+                margin-bottom: 10px;
+                width: 50px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .secondSection {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondSection .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                width: 100%;
+            }
+
+            .secondSection .vertical {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            .secondSection .vertical-title {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
+
+            .secondSection .vertical-desc {
+                margin-top: 5px;
+                font-size: 1rem;
+                color: lightgray;
+                text-align: center;
+            }
+
+            .secondSection .image-top {
+                margin-bottom: 10px;
+                width: 50px;
+                height: auto;
+            }
+
+            footer {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="left">Adil's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="home" aria-label="Navigate to Home Page">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about" aria-label="Navigate to About Page">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="services" aria-label="Navigate to Services Page">Services</a></li>
+                    <li><a href="#" class="nav-link active" data-page="projects" aria-label="Navigate to Projects Page">Projects</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact" aria-label="Navigate to Contact Page">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+            <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+            <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+        <!-- Home Page Content -->
+        <div id="home-page" class="hidden">
+            <section class="firstSection">
+                <div class="leftSection">Hi,My name is <span class="purple">Adil</span>
+                    <div>and i am a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons" style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
+                        <a href="resume.pdf" download class="btn" style="text-align: center;" aria-label="Download Resume">Download Resume</a>
+                        <a href="https://github.com/Adil-web-bit" target="_blank" class="btn" style="text-align: center;" aria-label="Visit GitHub Profile">Visit GitHub</a>
+                    </div>
+                </div>
+
+                <div class="rightSection">
+                    <img src="bg.png" alt="Adil's Portfolio Background Image">
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span class="text-gray">what i have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="HTML CSS LOGO.png" alt="">
+                        <div class="vertical-title">HTML CSS DEVELOPER(2018)</div>
+                        <div class="vertical-desc">
+                            I'm an HTML/CSS expert with a passion for clean, semantic code.
+                            I craft pixel-perfect layouts and responsive designs for all devices,
+                            ensuring compatibility, speed, and modern visual consistency.
+                        </div>
+                    </div> 
+                    <div class="vertical">
+                        <img class="image-top" src="frontend_resized.png" alt="">
+                        <div class="vertical-title">Frontend developer(2023)</div>
+                        <div class="vertical-desc">
+                            I'm a frontend developer, skilled in building sleek and responsive UIs.
+                            With React, JavaScript, and modern tools, I craft smooth user experiences
+                            that are optimized for speed, accessibility, and cross-browser performance
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="developer.png" alt="">
+                        <div class="vertical-title">Full stack developer (2024)</div>
+                        <div class="vertical-desc">
+                            I'm a full stack developer with strong frontend and backend skills.
+                            From dynamic UIs to secure APIs, I build complete web applications
+                            using tools like React, Node.js, Express, MongoDB, and PostgreSQL.
+                        </div>
+                    </div> 
+                    <div class="vertical">
+                        <img class="image-top" src="python.png" alt="">
+                        <div class="vertical-title">Python DEVELOPER (2025)</div>
+                        <div class="vertical-desc">
+                            I'm a Python developer focused on writing clean and efficient code.
+                            I build scripts, web apps, and automation tools with precision and speed,
+                            leveraging libraries like Flask, Django, and Pandas for real solutions.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="machine-learning.png" alt="">
+                        <div class="vertical-title">Machine Learning Expert (2025)</div>
+                        <div class="vertical-desc">
+                            I'm a machine learning expert with a strong data science foundation.
+                            I build predictive models, process large datasets, and solve real problems
+                            using Python, Scikit-learn, TensorFlow, and deep learning techniques.
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        </div>
+        
+        <!-- About Page Content -->
+        <div id="about-page" class="hidden">
+            <section class="about-section">
+                <h1>About Me</h1>
+                
+                <p>I'm Adil, a passionate full-stack developer and machine learning enthusiast with several years of experience in building web applications and intelligent systems. My journey in technology began with HTML/CSS and has evolved to encompass a wide range of modern technologies.</p>
+                
+                <h2>My Journey</h2>
+                <p>Starting as an HTML/CSS developer in 2018, I quickly expanded my skills to include JavaScript and frontend frameworks. By 2023, I was building complex frontend applications with React and other modern tools.</p>
+                
+                <p>In 2024, I transitioned to full-stack development, adding Node.js, Express, and database technologies to my toolkit. This allowed me to build complete, end-to-end solutions for clients and personal projects.</p>
+                
+                <p>My passion for problem-solving led me to Python development and machine learning. In 2025, I began applying data science techniques to real-world problems, building predictive models and intelligent systems.</p>
+                
+                <h2>Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Express</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">PostgreSQL</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Django</div>
+                    <div class="skill-item">Flask</div>
+                    <div class="skill-item">Machine Learning</div>
+                    <div class="skill-item">TensorFlow</div>
+                    <div class="skill-item">Scikit-learn</div>
+                    <div class="skill-item">Pandas</div>
+                    <div class="skill-item">Git</div>
+                </div>
+                
+                <h2>Professional Approach</h2>
+                <p>I believe in writing clean, maintainable code and following best practices. My development process includes:</p>
+                <ul style="margin-left: 30px; line-height: 1.6;">
+                    <li>Thorough planning and architecture design</li>
+                    <li>Test-driven development where appropriate</li>
+                    <li>Code reviews and continuous integration</li>
+                    <li>Performance optimization</li>
+                    <li>Comprehensive documentation</li>
+                </ul>
+                
+                <h2>Beyond Coding</h2>
+                <p>When I'm not coding, I enjoy contributing to open-source projects, writing technical articles, and staying updated with the latest technology trends. I'm passionate about mentoring new developers and sharing knowledge through workshops and tutorials.</p>
+                
+                <div style="margin-top: 40px;">
+                    <button class="btn">Download Full CV</button>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Services Page Content -->
+        <div id="services-page" class="hidden">
+            <section class="services-section">
+                <h1>My Services</h1>
+                
+                <div class="services-intro">
+                    <p>With my diverse experience in web development and machine learning, I offer comprehensive solutions tailored to your needs. Here are the services I provide based on my professional journey and expertise.</p>
+                </div>
+                
+                <div class="service-cards">
+                    <!-- Web Development Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Full-cycle web development services from concept to deployment and maintenance.</p>
+                        <div class="price">Starting at $500/project</div>
+                        <ul>
+                            <li>Custom website development</li>
+                            <li>Responsive design for all devices</li>
+                            <li>Performance optimization</li>
+                            <li>Cross-browser compatibility</li>
+                            <li>SEO-friendly structure</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Frontend Development Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Building interactive and user-friendly interfaces with modern technologies.</p>
+                        <div class="price">Starting at $40/hour</div>
+                        <ul>
+                            <li>React.js applications</li>
+                            <li>Single Page Applications (SPA)</li>
+                            <li>UI/UX implementation</li>
+                            <li>State management solutions</li>
+                            <li>Component libraries</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Backend Development Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Robust server-side solutions for your web and mobile applications.</p>
+                        <div class="price">Starting at $50/hour</div>
+                        <ul>
+                            <li>Node.js/Express APIs</li>
+                            <li>Database design & integration</li>
+                            <li>Authentication systems</li>
+                            <li>Payment gateway integration</li>
+                            <li>Cloud deployment</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Python Development Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python Development</h3>
+                        <p>Custom Python solutions for automation, data processing, and web applications.</p>
+                        <div class="price">Starting at $45/hour</div>
+                        <ul>
+                            <li>Django/Flask web apps</li>
+                            <li>Data processing scripts</li>
+                            <li>Automation tools</li>
+                            <li>Web scraping solutions</li>
+                            <li>API development</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Machine Learning Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Implementing AI solutions to extract insights from your data and automate processes.</p>
+                        <div class="price">Starting at $60/hour</div>
+                        <ul>
+                            <li>Predictive modeling</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision solutions</li>
+                            <li>Recommendation systems</li>
+                            <li>Data analysis & visualization</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Full Stack Solution -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Full Stack Solutions</h3>
+                        <p>End-to-end development of complete web applications.</p>
+                        <div class="price">Starting at $5,000/project</div>
+                        <ul>
+                            <li>Complete web applications</li>
+                            <li>Database design</li>
+                            <li>API development</li>
+                            <li>Admin panels</li>
+                            <li>Deployment & maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <h2>Client Testimonials</h2>
+                    
+                    <div class="testimonial-card">
+                        <p>"Adil transformed our outdated website into a modern, responsive platform that increased our conversion rate by 35%. His attention to detail and understanding of our business needs was impressive."</p>
+                        <div class="testimonial-author">- Sarah Johnson, Marketing Director</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p>"The machine learning model Adil developed for our inventory forecasting has saved us thousands in operational costs. He explained complex concepts in simple terms and delivered ahead of schedule."</p>
+                        <div class="testimonial-author">- Michael Chen, Operations Manager</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p>"As a startup, we needed a developer who could wear many hats. Adil built our entire tech stack from frontend to backend, and even helped with our DevOps setup. Highly recommended!"</p>
+                        <div class="testimonial-author">- David Wilson, Startup Founder</div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 50px;">
+                    <button class="btn">Get a Free Consultation</button>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Projects Page Content -->
+        <div id="projects-page">
+            <section class="projects-section">
+                <h1>My Projects</h1>
+                
+                <div class="projects-intro">
+                    <p>Here are some of my notable projects that showcase my skills and experience across different technologies. Each project represents a unique challenge and learning opportunity in my development journey.</p>
+                </div>
+                
+                <div class="project-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="web">Web Development</button>
+                    <button class="category-btn" data-category="ml">Machine Learning</button>
+                    <button class="category-btn" data-category="python">Python</button>
+                    <button class="category-btn" data-category="fullstack">Full Stack</button>
+                </div>
+                
+                <div class="project-grid">
+                    <!-- Project 1 - Custom Portfolio Website -->
+                    <div class="project-card" data-categories="web">
+                        <div class="project-image">
+                            <img src="bg.png" alt="Portfolio Website" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Custom Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive portfolio website showcasing my work with smooth animations and clean design.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - E-commerce Platform -->
+                    <div class="project-card" data-categories="web fullstack">
+                        <div class="project-image">
+                            <img src="frontend_resized.png" alt="E-commerce Platform" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform with product listings, shopping cart, user authentication, and payment processing.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - Machine Learning Model -->
+                    <div class="project-card" data-categories="ml python">
+                        <div class="project-image">
+                            <img src="machine-learning.png" alt="Machine Learning Model" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Machine Learning Model</h3>
+                            <p class="project-description">
+                                A predictive model for sentiment analysis using Python and machine learning libraries.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Task Management App -->
+                    <div class="project-card" data-categories="web fullstack">
+                        <div class="project-image">
+                            <img src="developer.png" alt="Task Management App" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A productivity application with task organization, team collaboration, and real-time updates.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - Python Automation Script -->
+                    <div class="project-card" data-categories="python">
+                        <div class="project-image">
+                            <img src="python.png" alt="Python Automation Script" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Python Automation Script</h3>
+                            <p class="project-description">
+                                A Python script to automate repetitive tasks, saving time and increasing efficiency.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Contact Page Content -->
+        <div id="contact-page" class="hidden">
+            <section class="contact-section" style="padding: 40px; max-width: 800px; margin: auto;">
+                <h1 style="text-align: center; color: blueviolet;">Contact Me</h1>
+                <p style="text-align: center; margin-bottom: 20px;">If you have any questions or want to work together, feel free to reach out!</p>
+                <div class="contact-details" style="margin-bottom: 30px;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><strong>WhatsApp:</strong> 03030118383</li>
+                        <li style="margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:adil0118383@gmail.com" style="color: blue;">adil0118383@gmail.com</a></li>
+                        <li style="margin-bottom: 10px;"><strong>Fiverr:</strong> <a href="https://www.fiverr.com/s/zW2zjad" target="_blank" style="color: blue;">https://www.fiverr.com/s/zW2zjad</a></li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <button class="btn">Send a Message</button>
+                </div>
+                <div style="text-align: center;">
+                    <h2 style="margin-bottom: 20px; color: blueviolet;">Location</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.922091091497!2d72.8151163152106!3d33.73790998069862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df956b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sUET%20Taxila!5e0!3m2!1sen!2s!4v1610000000000!5m2!1sen!2s" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        aria-label="Map showing the location of UET Taxila, Pakistan">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+            <div class="footer" style="display: flex; justify-content: space-evenly; padding: 20px 50px;">
+                <div class="footer-first" style="flex: 1; text-align: center;">
+                    <h3>Adil's Portfolio</h3>
+                    <p>Your one-stop solution for web development, machine learning, and more. Let's build something amazing together!</p>
+                </div>
+                <div class="footer-second" style="flex: 1; text-align: center;">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" class="nav-link" data-page="home" aria-label="Navigate to Home Page">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="about" aria-label="Navigate to About Page">About</a></li>
+                        <li><a href="#" class="nav-link" data-page="services" aria-label="Navigate to Services Page">Services</a></li>
+                        <li><a href="#" class="nav-link" data-page="projects" aria-label="Navigate to Projects Page">Projects</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact" aria-label="Navigate to Contact Page">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-third" style="flex: 1; text-align: center;">
+                    <h4>Contact Info</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Email: <a href="mailto:adil0118383@gmail.com">adil0118383@gmail.com</a></li>
+                        <li>Phone: 03030118383</li>
+                        <li>Location: City: Islamabad, Country: Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth" style="flex: 1; text-align: center;">
+                    <h4>Follow Me</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="https://github.com/Adil-web-bit" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-adil-73630329b/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://x.com/MuhammadAd14778" target="_blank" rel="noopener noreferrer" aria-label="Visit Twitter Profile"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100091355902729" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook Profile"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights" style="text-align: center; margin-top: 20px;">
+                <p>Copyright &#169; 2025 Adil's Portfolio | All rights reserved</p>
+                <p>Designed and Developed by Adil</p>
+            </div>
+        </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typed.js initialization
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Machine learning expert', 'Python developer', 'programming expert', 'Github expert'],
+            typeSpeed: 50,
+        });
+        
+        // Page navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Function to show a specific page and hide others
+            function showPage(pageId) {
+                // Hide all pages
+                document.querySelectorAll('#main-content > div').forEach(page => {
+                    page.classList.add('hidden');
+                });
+                
+                // Show the selected page
+                document.getElementById(pageId + '-page').classList.remove('hidden');
+                
+                // Update active link
+                navLinks.forEach(link => {
+                    if (link.dataset.page === pageId) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Add click event listeners to all navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const page = this.dataset.page;
+                    showPage(page);
+                    
+                    // Update URL without reloading the page
+                    history.pushState({page}, '', `#${page}`);
+                });
+            });
+            
+            // Check for hash on page load
+            const initialPage = window.location.hash.substring(1) || 'home';
+            showPage(initialPage);
+            
+            // Handle back/forward navigation
+            window.addEventListener('popstate', function(event) {
+                const page = event.state ? event.state.page : 'home';
+                showPage(page);
+            });
+            
+            // Make sure home page is shown if no valid hash
+            if (!document.getElementById(initialPage + '-page')) {
+                showPage('home');
+            }
+            
+            // Project filtering functionality
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active category button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (category === 'all' || card.dataset.categories.includes(category)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Update toggleMenu function to close the menu after clicking a link
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Add event listeners to close the menu when a link is clicked
+        document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
+
